@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+:root{
+--Soft-red: hsl(7, 99%, 70%);
+--Yellow: hsl(51, 100%, 49%);
+--Dark-desaturated-cyan : hsl(167, 40%, 24%);
+--Dark-blue : hsl(198, 62%, 26%);
+--Dark-moderate-cyan : hsl(168, 34%, 41%);
+--Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+--Very-darkgrayish-blue: hsl(213, 9%, 39%);
+--Dark-grayish-blue: hsl(232, 10%, 55%);
+--Grayish-blue: hsl(210, 4%, 67%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding:0;
+}
+ body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    box-sizing: border-box;
+    font-family: 'Barlow', sans-serif;
+    font-family: 'Fraunces', serif;
+ }
+ .mobile{
+    width: 100%;
+}
+header{
+    width: 100%;
+    position: relative;
+}
+a{
+    text-decoration: none;
+}
+.logo{
+    position: absolute;
+    color: var(--White);
+    
+}
+ul{
+    display: flex;
+    gap:5px;
+    justify-content: column;
+    /* align-items: center; */
+    list-style: none;
+
+}
+.headre-text{
+    font-family: 'Fraunces', serif;
+    position: absolute;
+    color: var(--White);
+    top: 50%;
+    left: 25%;
+    text-align: center;
+}
+main{
+    display: flex;
+    flex-direction: column;
+}
+.article{
+    width: 300px; 
+    height: 46vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* text-align: center; */
+    /* background-color:var(--White); */
+}
+.article h1{
+    text-align: center;
+}
+.article p{
+    padding-left: 30px;
+    text-align: center;
+    margin: 20px 0;
+}
+.desktop-image{
+    display: none;
+}
+.Text-imag1{
+    /* background-image: url(./images/mobile/image-graphic-design.jpg) ;
+    background-repeat: no-repeat;
+    background-size: auto; */
+
+    position: relative;
+    /* width: 90%; */
+    margin: 0 auto;
+}
+
+.text-wapper{
+    color: var(--Dark-desaturated-cyan);
+    position: absolute;
+    top: 55%;
+    text-align: center;
+}
+.text-wapper1{
+    color: var(--Dark-blue);
+    position: absolute;
+    top: 55%;
+    text-align: center;
+}
+.testimony img{
+    border-radius: 100%;
+    margin: 10px;
+}
+.testimony{
+    text-align: center;
+}
+.testimony h1{
+    margin: 20px 0;
+    font-family: 'Fraunces', serif;
+    font-size: 30px;
+}
+.testimony h5{
+    margin: 25px 20px;
+}
+.testimony p{
+    /* margin: 10px 0; */
+    text-align: center;
+}
+.last-images{
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(2, 1fr); 
+} 
+
+footer{
+    border: 2px solid black;
+    background-color: var(--Dark-moderate-cyan);
+    width: 100vw;
+    height: 50vh;
+    text-align: center;
+    padding: 30px;
+}
+footer h2{
+    color:var(--Dark-desaturated-cyan);
+    margin-bottom: 20px;
+}
+.footer-logo {
+    text-align: center;
+    margin: 40px;
+}
+footer a{
+    color: var(--Dark-desaturated-cyan); 
+    padding-left: 40px;
+    
+}
+footer img{
+    padding: 0;
+}
+.social-icon{ 
+    margin-top: 90px;
+}
+
+@media screen and (min-width:700px){
+    .mobile{
+        display: none;
+    }
+    .class{
+        width: 100%;
+    }
+    .desktop-image{
+        display: block;
+        width: 50vw;
+    }
+    #Class{
+        width: 100%;
+        
+    }
+    header{
+        width: 100%;
+    }
+    .one{
+        display: flex;
+        flex-direction: row;
+    }
+    .one-part{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    /* .article{
+        width: 40vw;
+        height: 60vh;
+    } */
+    .article h1{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .article p{
+        text-align: center;
+    }
+    .Text{
+        display: flex;
+        flex-direction: row;
+     
+    }
+    /* .article p{
+        margin: 50px;
+    } */
+    .testimony h1{
+        text-align: center;
+        margin: 0 200px;
+    }
+    .testimony{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        /* padding: 70px; */
+    }
+
+    footer a{
+        padding-left: 40px;
+        
+    }
+    footer img{
+        padding: 0 50px;
+    }
+    .footer a{
+        margin: 0 150px;
+    }
+    .last-images{
+        display:row;
+        grid-template: repeat(1, 1fr) / repeat(2, 1fr); 
+    }
+}
